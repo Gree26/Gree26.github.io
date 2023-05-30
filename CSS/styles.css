@@ -3,7 +3,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #576574;
 }
 
 li {
@@ -12,7 +12,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: #07f9a2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -25,3 +25,75 @@ li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222f3e;
+}
+h1, h2, h3 {
+	text-align: center;
+	color: #c8d6e5;
+	text-shadow: -1px -1px 0 #8395a7, 1px -1px 0 #8395a7, -1px 1px 0 #8395a7, 1px 1px 0 #8395a7;
+}
+p {
+	color: #c8d6e5;
+	font-size: 25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    /* Style the counter cards */
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: left;
+    background-color: #576574;
+}
+
+.card h1,h2{
+		text-align: left;
+		padding: 0px;
+		color: #1dd1a1;
+		text-shadow:
+	    -1px -1px 0 #222f3e,
+	    1px -1px 0 #222f3e,
+	    -1px 1px 0 #222f3e,
+	    1px 1px 0 #222f3e; 
+	}
+.card h3{
+		text-align: left;
+		padding: 0px;
+		color: #10ac84;
+		text-shadow:
+	    -1px -1px 0 #222f3e,
+	    1px -1px 0 #222f3e,
+	    -1px 1px 0 #222f3e,
+	    1px 1px 0 #222f3e; 
+	}
